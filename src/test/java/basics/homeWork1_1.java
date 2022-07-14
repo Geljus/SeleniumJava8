@@ -4,14 +4,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
-public class Lesson1 {
+public class homeWork1_1 {
     private WebDriver driver = null;
 
     @Before
     public void setup() {
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
     }
 
     @Test
