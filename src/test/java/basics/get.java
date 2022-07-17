@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class homeWork1_1 {
+public class get {
     private WebDriver driver = null;
 
     @Before
@@ -17,7 +17,9 @@ public class homeWork1_1 {
     @Test
     public void howToOpenBrowserWindow() {
         driver.get("https://www.google.com/");
-
+        driver.get("https://www.yandex.ru/");
+        driver.navigate().back();
+        driver.navigate().forward();
     }
 
     @After
@@ -25,5 +27,5 @@ public class homeWork1_1 {
         driver.quit();
         driver = null;
     }
-}
 
+}
