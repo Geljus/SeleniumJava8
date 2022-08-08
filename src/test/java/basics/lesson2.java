@@ -18,11 +18,20 @@ public class lesson2 {
 
     @Test
     public void howToOpenBrowserWindow() {
-        driver.get("https://www.telekom.com/en/contact-forms/careers");
+//        driver.get("https://www.telekom.com/en/contact-forms/careers");
+//        driver.get("https://www.yandex.ru");
 //        WebElement container = driver.findElement(By.id("id56"));
-//        WebElement button = container.findElement(By.tagName("a"));
+//        WebElement button = container.findElement(By.tagName("a
 
-        driver.findElement(By.cssSelector("#id56>a"));
+//        WebElement searchField = driver.findElement(By.cssSelector(".geolink__reg"));
+//        driver.navigate().refresh();
+//        System.out.println(searchField);
+//        searchField.click();
+
+        driver.get("https://bolt.eu/ru/");
+        WebElement searchField1 = driver.findElement(By.cssSelector(".cb-bolt-btn-primary"));
+        searchField1.click();
+
     }
 
     @After
